@@ -224,9 +224,47 @@
             commit. A safer alternative to <code>git reset</code>.
           </td>
         </tr>
+         <tr>
+          <td><code>git reset --hard HEAD^</code></td>
+          <td>
+            This command performs a "hard reset" to the commit before the last commit (HEAD^). The --hard option discards changes in your working directory and staging area, effectively removing the last commit.It discards changes without any way to recover them.
+
+</code>.
+          </td>
+        </tr>
+        <tr>
+          <td><code>git reset --soft HEAD^</code></td>
+          <td>
+            This performs a "soft reset," preserving changes in your working directory and staging area. 
+
+</code>.
+          </td>
+        </tr>
       </table>
     </div>
+ <div class="ssh-connections">
+      <h2>SSH Key Generation</h2>
 
+<p>To establish secure communication between your local machine and GitHub, follow these steps:</p>
+
+<code># Generate a new SSH key using the Ed25519 algorithm</code>
+<code>ssh-keygen -t ed25519 -C "your_email@example.com"</code>
+<p>This command creates a new SSH key using the Ed25519 algorithm, enhancing security.</p>
+
+<code># Copy the generated public key to the clipboard</code>
+<code>clip &lt; ~/.ssh/id_ed25519.pub</code>
+<p>This command copies the generated public key to the clipboard, ready for pasting into GitHub settings.</p>
+
+<p>Next, go to GitHub settings under SSH, click "Add SSH Key," and paste the generated keys. Finally, check the connection with:</p>
+<code># Check if the connection was successful</code>
+<code>ssh -T git@github.com</code>
+<p>This command verifies if the SSH connection to GitHub is successful, ensuring secure authentication displaying <code>Hi USERNAME! You've successfully authenticated, but GitHub does not
+> provide shell access.</code></p>
+<p> Alernatively we can update the remote URL to use SSH using <code>git remote set-url origin git@github.com:username/reponame.git
+</code></p>
+<p>We can set username and email in local machine through cmd using <code>git config --global user.name and git config --global user.email
+</code></p>
+    </div>
     <div class="connect-local-remote">
       <h2>Connect Local to Remote Repository</h2>
 
@@ -274,6 +312,7 @@
         </tr>
       </table>
     </div>
+   
     <footer> Made with ❤️ - 	&#169 Ajay Kumar Gour</footer>
   </body>
 </html>
