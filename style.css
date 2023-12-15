@@ -3,29 +3,28 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: myFont;
+  src: url(./font.otf);
+}
 
 .bg-container {
-  /* border: 1px solid black; */
-  display: relative;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 70px;
+  height: fit-content;
+  padding: 20px;
+  border: 1px dashed black;
 }
 
-.bg-image {
-  width: 90%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-}
-
-.main-bar {
-  position: absolute;
-  top: 25%;
-  left: 30%;
-}
 .main-bar p {
   text-align: center;
-  color: white;
-  font-size: 20px;
+  color: black;
+  font-size: 35px;
+  font-family: myFont;
 }
 .explore-btn {
   /* border: 1px solid black; */
@@ -121,3 +120,5 @@ code {
   margin-bottom: 10px;
   border: 1px solid #ccc;
 }
+
+
