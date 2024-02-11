@@ -1,3 +1,7 @@
+# GITHUB-LOG
+
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+
 Welcome to my GitHub Learning Repository! 🚀 Here, I document my journey as I explore and master various GitHub features and best practices. From basic commands to advanced workflows, this repository serves as my digital journal of GitHub discoveries.
 
 
